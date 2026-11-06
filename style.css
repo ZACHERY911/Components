@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+  margin: 0;
+}
+main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { margin-bottom: 4px; }
+.sub { color: #52606d; margin-top: 0; }
+code { background: #e4e7eb; padding: 1px 5px; border-radius: 4px; }
+
+form, .row { display: flex; gap: 8px; flex-wrap: wrap; }
+input {
+  flex: 1; min-width: 120px; padding: 10px;
+  border: 1px solid #cbd2d9; border-radius: 8px; font-size: 1rem;
+}
+button {
+  padding: 10px 16px; border: 0; border-radius: 8px;
+  background: #2f6fed; color: #fff; font-size: 1rem; cursor: pointer;
+}
+button.secondary { background: #7b8794; }
+button:hover { opacity: 0.9; }
+
+.error { color: #c53030; min-height: 1.2em; margin: 6px 0 0; }
+
+.jar {
+  background: #fff; border-radius: 12px; padding: 16px; margin-top: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.jar h2 { margin: 0 0 4px; font-size: 1.2rem; }
+.balance { margin: 0 0 10px; color: #52606d; }
+.bar { background: #e4e7eb; height: 14px; border-radius: 7px; overflow: hidden; margin-bottom: 12px; }
+.fill { height: 100%; width: 0; background: #2f6fed; transition: width 0.3s; }
+.jar.done .fill { background: #2f9e44; }
+.msg { min-height: 1.2em; margin: 10px 0 0; font-size: 0.95rem; }
+.msg.good { color: #2f9e44; }
+.msg.bad { color: #c53030; }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savings Jars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>🫙 Savings Jars</h1>
+    <p class="sub">Every jar below is a separate instance of the same <code>SavingsJar</code> component.</p>
+
+    <form id="create-form">
+      <input id="jar-name" placeholder="Jar name (e.g. New Phone)" required>
+      <input id="jar-goal" type="number" min="1" placeholder="Goal (e.g. 500)" required>
+      <button type="submit">Create jar</button>
+    </form>
+    <p id="form-error" class="error"></p>
+
+    <div id="jars"></div>
+  </main>
+
+  <script type="module" src="ui.js"></script>
+</body>
+</html>
